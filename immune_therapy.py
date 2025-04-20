@@ -18,7 +18,7 @@ def get_signatures():
     if conn:
         try:
             with conn.cursor() as cur:
-                cur.execute("SELECT signature FROM signatures;")
+                cur.execute("SELECT signature FROM virus_signatures;")
                 results = cur.fetchall()
                 return [row[0] for row in results]
         except Exception as e:
