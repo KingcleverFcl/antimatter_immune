@@ -4,7 +4,7 @@ import json
 import psutil
 import psycopg2
 
-DB_URL = os.getenv("DATABASE_PUBLIC_URL") or "postgresql://postgres:cnuhaLAGhdiaVpxZkhszmSyTUDViHhxB@turntable.proxy.rlwy.net:22637/railway"
+DB_URL = os.getenv("DATABASE_PUBLIC_URL")
 
 def connect_db():
     try:
